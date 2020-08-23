@@ -83,7 +83,7 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a href="index.html">
+						<a href="#">
 							<img class="logo" src="img/logo.png" alt="logo">
 						</a>
 					</div>
@@ -390,7 +390,7 @@
 						<input type="email" id="email" class="input" placeholder="Email">
 						<input type="text" id="affair" class="input" placeholder="Asunto">
 						<textarea class="input" id="message" placeholder="Escribe tu mensaje. Comentanos cuál es tu tipo de negocio y qué te gustaría hacer."></textarea>
-						<h5 class="text-center">*Debe rellenar todos los campos del formulario para continuar*</h5>
+						<h5 class="text-center hidden" id="text_validation">*Debe rellenar todos los campos del formulario para continuar*</h5>
 						<button class="main-btn" id="btn-submit">Envíar Mensaje</button>
 					</form>
 				</div>
@@ -419,26 +419,26 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.html"><img src="img/lt.png" alt="logo"></a>
+						<a href="#"><img src="img/lt.png" alt="logo"></a>
 					</div>
 					<!-- /footer logo -->
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.facebook.com/artictechsolutions-112137980603114" target="_blank"><i class="fa fa-facebook"></i></a></li>
 
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://twitter.com/ArticTechical/" target="_blank"><i class="fa fa-twitter"></i></a></li>
 
-						<li><a href="https://www.instagram.com/artic.solutions/?hl=es-la"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.instagram.com/artic.solutions" target="_blank"><i class="fa fa-instagram"></i></a></li>
 
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/artic-solutions" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 
 					</ul>
 					<!-- /footer follow -->
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2020. All Rights Reserved. Designed by <a href="" target="_blank">Artic Solutions</a></p>
+						<p>Copyright © 2020. All Rights Reserved. Designed by <a href="#" target="_blank">Artic Solutions</a></p>
 					</div>
 					<!-- /footer copyright -->
 
@@ -461,6 +461,25 @@
 				<br>
 				<h3 class="text-center">Su mensaje ha sido enviado correctamente</h3>
 				<h3 class="text-center">Muy pronto nuestro equipo se pondrá en contacto con usted</h3>
+				<h3 class="text-center">Muchas Gracias!</h3>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="main-btn" data-dismiss="modal">Cerrar</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div id="modal_failed" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+		  <!-- Contenido del modal -->
+		  <div class="modal-content">
+			
+			<div class="modal-body">
+				<br>
+				<h3 class="text-center">Oops Ha Ocurrido Un Problema</h3>
+				<h3 class="text-center">Por Favor Comuniquese Con el Soporte técnico a</h3>
+				<h3 class="text-center">artic.technicalsolutions@gmail.com</h3>
 				<h3 class="text-center">Muchas Gracias!</h3>
 			</div>
 			<div class="modal-footer">

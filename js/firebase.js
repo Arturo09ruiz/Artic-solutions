@@ -14,30 +14,28 @@ form.addEventListener("submit", (e) => {
 
     e.preventDefault();
 
-    if (!name.value.trim()) {
-        console.log("input name vacio");
+    if (!name.value.trim()) {	
+        $("#text_validation").removeClass("hidden");
       return;
     }
 
     if (!email.value.trim()) {
-        console.log("input email vacio");
+        $("#text_validation").removeClass("hidden");
       return;
     }
 
     if (!affair.value.trim()) {
-        console.log("input affair vacio");
+        $("#text_validation").removeClass("hidden");
       return;
     }
 
     if (!message.value.trim()) {
-        console.log("input message vacio");
+        $("#text_validation").removeClass("hidden");
       return;
     }
 
   
-
-
-
+    $("#text_validation").addClass("hidden");
 
     firebase
       .firestore()
@@ -53,8 +51,13 @@ form.addEventListener("submit", (e) => {
       })
       .catch((e) => {
         console.log(e);
+        $("#modal_failed").modal("show");
       });
       name.value = "";
+      email.value = "";
+      affair.value = "";
+      message.value = "";
+
 
   });
 

@@ -1,6 +1,6 @@
 /*
 Theme Name:
-Author: yaminncco
+Author: Arturo Ruiz
 
 Colors:
 	Body 		  : #868F9B
@@ -1761,3 +1761,12 @@ header {
             transform:scale(0);
   }
 }
+
+
+.show-text-validation{
+    display: block;
+}
+
+/* .hidden-text-validation{
+    display: hidden !important;
+} */
